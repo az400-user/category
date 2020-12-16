@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mongo-pv
-  namespace: brixton
+  name: mongo-pv-brixton #renamed mongo-pv to mongo-pv-brixton
+  #namespace: brixton --This will be created at the cluster level.. Same name can be used by someone else also..
   labels:
     type: local
 spec:
